@@ -1,0 +1,469 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600);
+@import url("../lib/font-awesome.css");
+@import url("../lib/animate.css");
+/* line 5, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* ==== overwrite bootstrap standard ==== */
+/* line 13, ../sass/styles.scss */
+body {
+  background-color: #DFDDDD;
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+
+/* line 17, ../sass/styles.scss */
+p {
+  color: #333;
+  font-size: 14px;
+}
+
+/* line 21, ../sass/styles.scss */
+p img {
+  margin: 10px;
+  width: 250px;
+  height: 250px;
+  float: left;
+}
+
+/* line 27, ../sass/styles.scss */
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+/* line 34, ../sass/styles.scss */
+.header {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  height: 120px;
+  padding: 10px;
+  background-color: #DFDDDD;
+}
+
+/* line 44, ../sass/styles.scss */
+.logo {
+  float: left;
+}
+
+/* line 47, ../sass/styles.scss */
+.logo img {
+  height: 100px;
+}
+
+/* line 50, ../sass/styles.scss */
+.nav {
+  margin-top: 70px;
+  float: right;
+}
+
+/* line 54, ../sass/styles.scss */
+.nav li {
+  float: left;
+}
+
+/* line 57, ../sass/styles.scss */
+.nav li a,
+#touch-menu {
+  display: block;
+  height: 30px;
+  padding: 8px 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* line 68, ../sass/styles.scss */
+.nav li a:hover,
+#touch-menu:hover {
+  background-color: #D0CDCD;
+}
+
+/* line 72, ../sass/styles.scss */
+.nav li a:hover {
+  color: #009933;
+}
+
+/* line 75, ../sass/styles.scss */
+.nav li a.active {
+  color: #009933;
+}
+
+/* line 79, ../sass/styles.scss */
+#touch-menu {
+  display: none;
+}
+
+/* line 82, ../sass/styles.scss */
+.divide {
+  display: block;
+  height: 3px;
+  margin: 4px 0;
+  background: #333;
+}
+
+/* line 89, ../sass/styles.scss */
+.lang {
+  float: right;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  /* line 97, ../sass/styles.scss */
+  body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    padding-top: 70px;
+  }
+
+  /* line 101, ../sass/styles.scss */
+  .header {
+    font-family: 'Open Sans', Arial, sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background-color: #DFDDDD;
+  }
+
+  /* line 111, ../sass/styles.scss */
+  .logo img {
+    height: 60px;
+  }
+
+  /* line 114, ../sass/styles.scss */
+  .lang {
+    float: right;
+    padding: 15px 10px;
+    height: 50px;
+  }
+
+  /* line 119, ../sass/styles.scss */
+  .nav {
+    position: absolute;
+    margin-top: -10px;
+    top: 100%;
+    left: 0;
+    right: 0;
+    display: none;
+  }
+
+  /* line 127, ../sass/styles.scss */
+  .nav li {
+    float: none;
+  }
+
+  /* line 131, ../sass/styles.scss */
+  .nav li a {
+    margin-top: 0px;
+    color: #333;
+    border-top: 1px solid #eee;
+    background-color: #F5F6F4;
+  }
+
+  /* line 137, ../sass/styles.scss */
+  .nav li:first-child a {
+    border-top: none;
+    margin-top: 10px;
+  }
+
+  /* line 141, ../sass/styles.scss */
+  .nav li a:hover {
+    background-color: #F0F0EF;
+    border-left: 3px solid #D0CDCD;
+  }
+
+  /* line 145, ../sass/styles.scss */
+  #touch-menu {
+    display: block;
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin: 5px 10px;
+    padding: 13px 10px;
+  }
+}
+/* line 157, ../sass/styles.scss */
+#breadcrumb {
+  background-color: #009933;
+  margin-top: 110px;
+  height: 30px;
+}
+
+/* line 162, ../sass/styles.scss */
+.breadcrumb {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  list-style: none;
+  background-color: #009933;
+  border-radius: 0px;
+  padding: 0 10px;
+}
+
+/* line 172, ../sass/styles.scss */
+.breadcrumb li {
+  text-transform: uppercase;
+  padding: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* line 179, ../sass/styles.scss */
+.breadcrumb li a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* line 183, ../sass/styles.scss */
+.breadcrumb li a:hover {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+@media (max-width: 768px) {
+  /* line 190, ../sass/styles.scss */
+  #breadcrumb {
+    background-color: #009933;
+    margin-top: 70px;
+    height: 30px;
+  }
+
+  /* line 195, ../sass/styles.scss */
+  .breadcrumb {
+    max-width: 960px;
+  }
+}
+/* line 203, ../sass/styles.scss */
+.content {
+  width: 100%;
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+/* google map */
+/* line 211, ../sass/styles.scss */
+#google-map {
+  position: absolute;
+  float: left;
+  margin: 20px 30px;
+  height: 400px;
+  width: 400px;
+}
+
+/* line 218, ../sass/styles.scss */
+.contacts {
+  position: absolute;
+  margin-left: 60px;
+  padding-top: 20px;
+  left: 50%;
+  width: 400px;
+}
+
+/* line 225, ../sass/styles.scss */
+.contacts h2 {
+  padding: 10px 20px 30px 0px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* line 232, ../sass/styles.scss */
+.contacts p {
+  font-size: 16px;
+}
+
+/* line 235, ../sass/styles.scss */
+p.adress, p.phone, p.email, p.facebook {
+  padding-top: 30px;
+  line-height: 1.5;
+}
+
+/* line 239, ../sass/styles.scss */
+.contacts a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* line 244, ../sass/styles.scss */
+span.icon {
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: #3366CC;
+  border-radius: 3px;
+}
+
+/* line 253, ../sass/styles.scss */
+.fa-map-marker, .fa-phone {
+  margin-right: 5px;
+  font-size: 20px;
+}
+
+/* line 257, ../sass/styles.scss */
+.fa-facebook {
+  margin: 8px;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+/* line 264, ../sass/styles.scss */
+.fa-envelope {
+  padding-right: 10px;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  /* line 272, ../sass/styles.scss */
+  .content {
+    position: static;
+    width: 100%;
+    margin: 30px auto;
+    padding: 10px;
+  }
+
+  /* line 278, ../sass/styles.scss */
+  #google-map {
+    display: none;
+  }
+
+  /* line 281, ../sass/styles.scss */
+  .contacts {
+    position: static;
+    width: 100%;
+    top: 120px;
+  }
+
+  /* line 287, ../sass/styles.scss */
+  .contacts h2 {
+    padding: 10px 0 10px 0;
+    margin: auto;
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+  }
+
+  /* line 295, ../sass/styles.scss */
+  p.adress, p.phone, p.email, p.facebook {
+    padding-top: 20px;
+    line-height: 1.5;
+  }
+}
+/* line 302, ../sass/styles.scss */
+.partners-list {
+  position: absolute;
+  top: 600px;
+  max-width: 960px;
+  margin: auto;
+}
+
+/* line 308, ../sass/styles.scss */
+.partners-list h2 {
+  position: static;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* line 316, ../sass/styles.scss */
+.partner {
+  margin: 20px;
+  display: inline-block;
+}
+
+/* line 321, ../sass/styles.scss */
+.partner img {
+  margin: 10px;
+  width: 120px;
+  height: 100px;
+}
+
+@media (max-width: 768px) {
+  /* line 331, ../sass/styles.scss */
+  .partners-list {
+    position: static;
+    width: 100%;
+    top: 600px;
+    margin: auto;
+  }
+
+  /* line 337, ../sass/styles.scss */
+  .partner {
+    margin: 20px auto;
+    display: inline-block;
+  }
+}
