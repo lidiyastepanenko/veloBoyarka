@@ -202,7 +202,7 @@ h1 {
 // #contacts
 .content{
 	width: 100%;
-	max-width: 1000px;
+	max-width: 960px;
 	// margin-top: 20px;
 	margin: 20px auto;
 	padding: 10px;
@@ -272,6 +272,7 @@ span.icon {
 	.content{
 		position: static;
 		width:100%;
+		max-width: 768px;
 		margin: 30px auto;
 		padding:10px;
 	}
@@ -282,6 +283,7 @@ span.icon {
 		position: static;
 		width:100%;
 		top: 120px;
+		margin-left: 10px;
 		// float: auto;
 	}
 	.contacts h2 {
